@@ -88,12 +88,12 @@
       radial-gradient(60% 55% at 50% 115%, rgba(230,154,82,0.30), transparent 70%),
       linear-gradient(180deg, #140f1a 0%, #221729 55%, #331d29 100%);
   }
-  .horizon-line{
-    position:absolute; left:0; right:0; bottom:38%; height:1px; z-index:0;
+  .hero-divider{
+    position:relative; height:1px; margin:50px 0; z-index:0;
     background:linear-gradient(90deg, transparent, rgba(230,154,82,0.5) 20%, rgba(230,154,82,0.85) 50%, rgba(230,154,82,0.5) 80%, transparent);
   }
-  .sun{
-    position:absolute; left:50%; bottom:calc(38% - 26px); transform:translateX(-50%); z-index:0;
+  .hero-divider .sun{
+    position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); z-index:0;
     width:52px; height:52px; border-radius:50%;
     background:radial-gradient(circle at 35% 30%, #fff5, var(--ember) 55%, var(--rust) 100%);
     box-shadow:0 0 60px 12px rgba(230,154,82,0.45);
@@ -106,11 +106,11 @@
   h1.title{font-size:clamp(2.6rem, 8vw, 5.2rem); line-height:0.92; margin:0 0 20px;}
   h1.title em{font-style:normal; color:var(--ember);}
   .subhead{
-    max-width:560px; margin:0 auto 80px; font-size:1.08rem; color:var(--sand-dim);
+    max-width:560px; margin:0 auto; font-size:1.08rem; color:var(--sand-dim);
     font-family:'Piazzolla',serif;
   }
   .hero-note{
-    max-width:640px; margin:80px auto 0; text-align:left; font-size:0.92rem; color:var(--sand-dim);
+    max-width:640px; margin:0 auto; text-align:left; font-size:0.92rem; color:var(--sand-dim);
     border-left:2px solid var(--ember); padding:10px 18px; background:rgba(230,154,82,0.06);
   }
 
@@ -263,12 +263,11 @@
 
 <section class="hero">
   <div class="sky"></div>
-  <div class="horizon-line"></div>
-  <div class="sun"></div>
   <div class="wrap hero-content">
     <span class="eyebrow">A Community Resource · Pre-Burn / On-Playa / Integration</span>
     <h1 class="title">After<br><em>the Dust</em></h1>
     <p class="subhead">A field guide to the emotional and relational side of Burning Man — for going, for being there, and for coming home. Built for couples, singles, first-timers, partners staying behind, and camp mates.</p>
+    <div class="hero-divider"><div class="sun"></div></div>
     <div class="hero-note">
       Burning Man can feel like temporarily inhabiting another reality. Novelty, heat, sleep loss, ritual, music, and radical social permission can produce something close to an altered state — even with nothing chemical involved. That doesn't make the experience less real. It means what you decide <em>during</em> it deserves a second look once you're rested.
     </div>
