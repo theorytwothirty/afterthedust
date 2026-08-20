@@ -188,7 +188,7 @@
   }
 
   .divider-horizon{
-    height:1px; margin:60px 0 0; position:relative;
+    height:1px; margin:90px 0 60px; position:relative;
     background:linear-gradient(90deg, transparent, var(--line) 15%, var(--line) 85%, transparent);
   }
   .divider-horizon .sun-small{
@@ -217,19 +217,6 @@
   .res-card{border:1px solid var(--line); background:var(--panel); padding:20px 22px; border-radius:4px;}
   .res-card h4{margin:0 0 6px; font-family:'Big Shoulders Display',sans-serif; font-size:1.1rem; letter-spacing:0.02em; color:var(--sand);}
   .res-card .contact{font-family:'Space Mono',monospace; color:var(--ember); font-size:0.85rem; display:block; margin-top:8px;}
-
-  .crisis-bar{
-    position:fixed; bottom:0; left:0; right:0; z-index:50;
-    background:var(--warn); color:#fff; font-family:'Space Mono',monospace; font-size:0.78rem;
-    padding:10px 18px; display:flex; align-items:center; justify-content:center; gap:14px; flex-wrap:wrap;
-    box-shadow:0 -2px 18px rgba(0,0,0,0.4);
-  }
-  .crisis-bar a{color:#fff; text-decoration:underline;}
-  .crisis-close{
-    background:transparent; border:1px solid rgba(255,255,255,0.5); color:#fff; border-radius:3px;
-    padding:2px 8px; cursor:pointer; font-family:'Space Mono',monospace; font-size:0.7rem;
-  }
-  body{padding-bottom:52px;}
 
   footer.end{padding:60px 0 100px; text-align:center;}
   footer.end .mono{color:var(--sand-dim); font-size:0.8rem;}
@@ -450,7 +437,7 @@
       <p>Burning Man's own guidance encourages camps to build a culture of consent that extends beyond explicitly sexual spaces — labor division, leadership conflict, feelings of exclusion, and power dynamics between camp leads and newer members all belong in that conversation, not just the erotic ones.</p>
       <p>If you're a visible facilitator, teacher, or "the person everyone wants a hug from," name the strain directly with your partner or close campmates in advance: people in that role often create a dynamic where the people closest to them feel like they're waiting in line for access. That's worth a conversation before it becomes a resentment.</p>
       <div class="callout warn">
-        <strong>Be specifically careful wherever spiritual authority and sexuality overlap</strong> — teacher, healer, tantra facilitator, shaman, coach, or an experienced burner guiding a first-timer. Admiration, altered states, and a power gap coexisting is exactly the condition under which consent gets complicated without anyone naming it as complicated. See the note on tantra and "sacred sexuality" schools in the resources section below before treating any training lineage as an automatic safety guarantee.
+        <strong>Be specifically careful wherever spiritual authority and sexuality overlap</strong> — teacher, healer, tantra facilitator, shaman, coach, or an experienced burner guiding a first-timer. Admiration, altered states, and a power gap coexisting is exactly the condition under which consent gets complicated without anyone naming it as complicated. Don't treat any training lineage as an automatic safety guarantee.
       </div>
     </div>
   </section>
@@ -640,30 +627,6 @@
     </div>
   </section>
 
-  <!-- ============ ISTA / TANTRA CAUTION ============ -->
-  <section class="phase" id="tantra-note">
-    <div class="phase-head">
-      <span class="phase-num">A NOTE</span>
-      <h2 class="phase-title">On Tantra &amp; "Sacred Sexuality" Schools</h2>
-      <p class="phase-dek">Several well-known training lineages in this space — <strong>authentic relating</strong> and <strong>circling</strong> communities, and separately, "conscious sexuality" schools such as the <strong>International School of Temple Arts (ISTA)</strong> — get referenced often in Burner and festival circles. They deserve different treatment.</p>
-    </div>
-
-    <div class="card" data-audience="facilitators">
-      <div class="tags"><span class="pill facilitators">Facilitators &amp; Camp Leads</span><span class="pill everyone">Anyone Considering These Trainings</span></div>
-      <h3>Authentic Relating &amp; Circling</h3>
-      <p>These are structured practices — games and facilitated group exercises — for practicing presence, honesty, and consent-based interaction. They're widely used, generally transparent about method, and a reasonable place to build the skills this guide keeps referencing: naming what's happening, checking in, distinguishing your experience from someone else's.</p>
-    </div>
-
-    <div class="card" data-audience="facilitators">
-      <div class="tags"><span class="pill facilitators">Facilitators &amp; Camp Leads</span><span class="pill everyone">Anyone Considering These Trainings</span></div>
-      <h3>ISTA and similar "sacred sexuality" schools — proceed with real information</h3>
-      <p>ISTA markets itself as teaching consent and conscious sexuality through immersive, multi-day trainings. It's also the subject of substantial, corroborated reporting: a 2022 RNZ investigation into New Zealand's Highden Temple training site included multiple former students and a former facilitator describing boundaries being pushed past what they'd agreed to; a February 2025 investigation in <em>New York Magazine's</em> The Cut documented further coercion and consent-abuse allegations inside the organization; and cult-intervention specialist Steven Hassan has publicly characterized ISTA as exhibiting patterns of manipulation, including pressure toward sexual openness without adequate safeguards.</p>
-      <p class="subtle">This isn't a claim that every ISTA exercise or every facilitator is unsafe, and it isn't this guide's place to adjudicate the organization. It's a claim that a resource built for people's safety shouldn't hand out an unqualified endorsement of any school teaching sexuality and power together without naming what's publicly documented about it. If you're drawn to this kind of work, the transferable skills — the Wheel of Consent, authentic relating, and Burning Man's own B.E.D. framework above — will take you most of the way there with a much cleaner accountability trail.</p>
-    </div>
-  </section>
-
-  <div class="divider-horizon"><div class="sun-small"></div></div>
-
   <!-- ============ FAQ / edge cases ============ -->
   <section class="phase" id="more">
     <div class="phase-head">
@@ -710,10 +673,6 @@
       <li>Burning Man Journal — <em>Decompression Tricks</em> (Halcyon); <em>How to Work Through Feeling Weird After Burning Man</em></li>
       <li>Michael McDonald — <em>Burning Man Integration and Aftercare</em>, Medium</li>
       <li>"Burning Man Boot Camp" community relationship-survival-guide recording (Halcyon &amp; partner) — community-supplied source</li>
-      <li>Authentic Relating / Circling community resources — authrev.org, circlingguide.com</li>
-      <li>RNZ — <em>Complainants warn against 'sacred sexuality' courses at International School of Temple Arts</em> (2022); NZ Herald reprint</li>
-      <li>Anya Kamenetz, <em>The Cut</em> / New York Magazine — <em>The Neo-Tantric Sex Group That Promised to Change</em> (Feb 2025)</li>
-      <li>Steven Hassan / BITE model commentary on ISTA, via multiple secondary reporting</li>
       <li>Planned Parenthood and multiple consent-education sources — the FRIES framework</li>
     </ul>
   </section>
@@ -723,11 +682,6 @@
   </footer>
 
 </main>
-
-<div class="crisis-bar" id="crisisBar">
-  <span>In crisis right now? <a href="#support">Jump to Support</a> · US: call or text <strong>988</strong></span>
-  <button class="crisis-close" id="crisisClose">Dismiss</button>
-</div>
 
 <script>
   // ---- filter logic ----
@@ -748,14 +702,6 @@
 
   chips.forEach(chip => {
     chip.addEventListener('click', () => setActive(chip.dataset.tag));
-  });
-
-  // ---- crisis bar dismiss ----
-  const bar = document.getElementById('crisisBar');
-  const closeBtn = document.getElementById('crisisClose');
-  closeBtn.addEventListener('click', () => {
-    bar.style.display = 'none';
-    document.body.style.paddingBottom = '0';
   });
 </script>
 
