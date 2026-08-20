@@ -711,7 +711,7 @@
           <p class="subtle">Volunteer consent-education camp operating under Burning Man Emergency Services since 2004. On-playa lounge, consent education, and support for anything boundary- or consent-related.</p>
           <span class="contact"><a href="https://bedtalks.org/" target="_blank" rel="noopener">bedtalks.org</a></span>
         </div>
-        <div class="res-card" data-phase="during">
+        <div class="res-card" data-phase="before after">
           <h4>Zendo Project</h4>
           <p class="subtle">Zendo has run on-site peer support at Burning Man for the past 14 years, but for 2026 has shifted to a take-home "Playa Kit" rather than a confirmed on-site presence. Green Dot Rangers and the Sanctuary space remain the dependable on-site option this year — double-check Zendo's current-year announcement closer to the event, since this can shift year to year.</p>
           <span class="contact"><a href="https://zendoproject.org/" target="_blank" rel="noopener">zendoproject.org</a></span>
@@ -810,8 +810,8 @@
   function setPhase(tag){
     phaseChips.forEach(c => c.dataset.active = (c.dataset.phase === tag) ? "true" : "false");
     resCards.forEach(card => {
-      const phase = card.dataset.phase;
-      if(tag === 'all' || phase === 'all' || phase === tag){
+      const phases = card.dataset.phase.split(' ');
+      if(tag === 'all' || phases.includes('all') || phases.includes(tag)){
         card.style.display = '';
       } else {
         card.style.display = 'none';
