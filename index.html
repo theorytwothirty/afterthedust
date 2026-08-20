@@ -30,6 +30,7 @@
     background:var(--void);
     color:var(--sand);
     font-family:'Piazzolla', Georgia, serif;
+    font-size:18px;
     line-height:1.65;
     -webkit-font-smoothing:antialiased;
   }
@@ -103,7 +104,7 @@
     font-family:'Space Mono',monospace; font-size:0.72rem; letter-spacing:0.18em; text-transform:uppercase;
     color:var(--ember); margin-bottom:18px; display:block;
   }
-  h1.title{font-size:clamp(2.6rem, 8vw, 5.2rem); line-height:0.92; margin:0 0 20px;}
+  h1.title{font-size:clamp(2.31rem, 8vw, 4.62rem); line-height:0.92; margin:0 0 20px;}
   h1.title em{font-style:normal; color:var(--ember);}
   .subhead{
     max-width:560px; margin:0 auto; font-size:1.08rem; color:var(--sand-dim);
@@ -234,12 +235,6 @@
   .sources-list a{color:var(--sand-dim); text-decoration:underline; text-decoration-color:var(--line);}
   .sources-list a:hover{color:var(--ember);}
 
-  details.faq{border-bottom:1px solid var(--line); padding:14px 0;}
-  details.faq summary{cursor:pointer; font-family:'Big Shoulders Display',sans-serif; font-size:1.05rem; letter-spacing:0.01em; color:var(--sand); list-style:none;}
-  details.faq summary::-webkit-details-marker{display:none;}
-  details.faq summary::before{content:"+ "; color:var(--ember);}
-  details.faq[open] summary::before{content:"– ";}
-  details.faq p{margin:10px 0 0; color:var(--sand-dim);}
 
   ::selection{background:var(--ember); color:var(--void);}
   @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
@@ -395,6 +390,12 @@
 
     <div class="card" data-audience="couples">
       <div class="tags"><span class="pill couples">Couples</span></div>
+      <h3>Already ethically non-monogamous? This still applies to you</h3>
+      <p>Most of the couples' section above still applies. Add one extra conversation: what gets reported back to existing partners — everything, highlights, or nothing unless asked? The intensity of this environment can make your normal disclosure norms feel insufficient in either direction, so it's worth re-confirming rather than assuming your usual agreement covers it.</p>
+    </div>
+
+    <div class="card" data-audience="couples">
+      <div class="tags"><span class="pill couples">Couples</span></div>
       <h3>One-page pre-burn check-in (worth printing)</h3>
       <table class="checklist">
         <tr><th>Question</th><th>Why it matters</th></tr>
@@ -431,6 +432,12 @@
         <li>Do we check in daily, and what counts as "worrying," versus "fine, just having fun"?</li>
         <li>What would make you want me to step in and intervene?</li>
       </ul>
+    </div>
+
+    <div class="card" data-audience="all">
+      <div class="tags"><span class="pill everyone">Everyone</span></div>
+      <h3>Bringing your kid? Here's what's different</h3>
+      <p>Bringing children changes the nature of the experience, because a lot of what makes it work is moment-to-moment freedom, which is hard to preserve alongside caregiving responsibility. A first-timer bringing a child is worth reconsidering — experiencing the environment once yourself first tends to make you a better, calmer parent on-site the second time. If your camp does host families, treat privacy, nudity, sensory overload, supervision, and a lost-child plan as their own conversation, not an afterthought.</p>
     </div>
   </section>
 
@@ -471,6 +478,12 @@
       <div class="callout">Consider agreeing in advance: <strong>no major relationship conversations</strong> when severely sleep-deprived, heavily intoxicated, coming up, peaking, coming down hard, dehydrated, or surrounded by twenty people at a sound camp. "This matters, I'm not dismissing it — let's stabilize and come back to it" is a complete sentence.</div>
     </div>
 
+    <div class="card" data-audience="couples">
+      <div class="tags"><span class="pill couples">Couples</span></div>
+      <h3>Renegotiating your relationship structure, for the first time, on playa?</h3>
+      <p>Generally, no. If you've always been monogamous and haven't seriously discussed opening up, deciding at 3am, sleep-deprived, because someone incredibly attractive has appeared, is about the worst possible negotiation environment. Either partner can always make a boundary more conservative in the moment — expanding one is worth waiting for a sober, private conversation.</p>
+    </div>
+
     <div class="card" data-audience="solo">
       <div class="tags"><span class="pill solo">Solo &amp; First-Timers</span></div>
       <h3>The daylight rule</h3>
@@ -508,6 +521,12 @@
         <li><strong>Month 1–3 — actual integration.</strong> This is where insight either becomes a real behavior change, or fades into nostalgia. Confide in people rather than cycling through the ups and downs alone.</li>
       </ul>
       <div class="callout"><strong>First 72 hours, prioritize physiology over philosophy:</strong> sleep, hydrate, eat, shower, sit somewhere quiet. Don't fill every evening with decompression parties immediately. You're allowed to feel flat. Do laundry. Look at photos. Write things down.</div>
+    </div>
+
+    <div class="card" data-audience="all">
+      <div class="tags"><span class="pill everyone">Everyone</span></div>
+      <h3>The ordinary drop vs. something to actually get help for</h3>
+      <p>The ordinary drop is a dip that gradually lifts over days to weeks as you rest, reconnect, and reintegrate. It's worth treating like any other mood shift you'd take seriously — get real support if it doesn't ease, if it intensifies, or if it comes with persistent sleep loss, panic, dissociation, or thoughts of self-harm. That's not a "you did Burning Man wrong" situation; it's a "please talk to a person, not just this page" situation. See Support, above.</p>
     </div>
 
     <div class="card" data-audience="all">
@@ -566,7 +585,7 @@
     </div>
   </section>
 
-  <div class="divider-horizon"><div class="sun-small"></div></div>
+  <div class="divider-horizon" style="margin:50px 0 20px;"><div class="sun-small"></div></div>
 
   <!-- ============ RESOURCES ============ -->
   <section class="resources" id="support">
@@ -632,32 +651,6 @@
       </div>
     </div>
   </section>
-
-  <!-- ============ FAQ / edge cases ============ -->
-  <section class="phase" id="more">
-    <div class="phase-head">
-      <span class="phase-num">MORE SITUATIONS</span>
-      <h2 class="phase-title">A Few More Things Worth Naming</h2>
-    </div>
-    <details class="faq">
-      <summary>I'm bringing my kid — what's different?</summary>
-      <p>Bringing children changes the nature of the experience, because a lot of what makes it work is moment-to-moment freedom, which is hard to preserve alongside caregiving responsibility. A first-timer bringing a child is worth reconsidering — experiencing the environment once yourself first tends to make you a better, calmer parent on-site the second time. If your camp does host families, treat privacy, nudity, sensory overload, supervision, and a lost-child plan as their own conversation, not an afterthought.</p>
-    </details>
-    <details class="faq">
-      <summary>We're already ethically non-monogamous — does this still apply to us?</summary>
-      <p>Most of the couples' section still applies. Add one extra conversation: what gets reported back to existing partners — everything, highlights, or nothing unless asked? The intensity of this environment can make your normal disclosure norms feel insufficient in either direction, so it's worth re-confirming rather than assuming your usual agreement covers it.</p>
-    </details>
-    <details class="faq">
-      <summary>Is it ever a good idea to renegotiate our relationship structure for the first time, on playa?</summary>
-      <p>Generally, no. If you've always been monogamous and haven't seriously discussed opening up, deciding at 3am, sleep-deprived, because someone incredibly attractive has appeared, is about the worst possible negotiation environment. Either partner can always make a boundary more conservative in the moment — expanding one is worth waiting for a sober, private conversation.</p>
-    </details>
-    <details class="faq">
-      <summary>What's the difference between the "post-burn drop" and something I should actually get help for?</summary>
-      <p>The ordinary drop is a dip that gradually lifts over days to weeks as you rest, reconnect, and reintegrate. It's worth treating like any other mood shift you'd take seriously — get real support if it doesn't ease, if it intensifies, or if it comes with persistent sleep loss, panic, dissociation, or thoughts of self-harm. That's not a "you did Burning Man wrong" situation; it's a "please talk to a person, not just this page" situation. See Support, above.</p>
-    </details>
-  </section>
-
-  <div class="divider-horizon"><div class="sun-small"></div></div>
 
   <!-- ============ SOURCES ============ -->
   <section class="phase" id="sources">
